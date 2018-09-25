@@ -1,3 +1,4 @@
 [submodule "3rdParty/jsoncpp"]
 	path = 3rdParty/jsoncpp
 	url = git@github.com:open-source-parsers/jsoncpp.git
+	branch = ddabf50f72cf369bf652a95c4d9fe31a1865a781

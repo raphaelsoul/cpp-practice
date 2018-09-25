@@ -1,4 +1,4 @@
-project(algorithm)
+# project(algorithm)
 
 set(SOURCE_FILES main.cpp)
 # set(OPENSSL_ROOT_DIR /usr/local/opt/openssl)
