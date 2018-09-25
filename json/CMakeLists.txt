@@ -1,4 +1,4 @@
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp JsonHelper.h JsonHelper.cpp)
 add_executable(json ${SOURCE_FILES})
 
 find_package(Boost REQUIRED COMPONENTS filesystem)
