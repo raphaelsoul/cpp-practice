@@ -1,0 +1,16 @@
+{
+  "foobar":1,
+  "array": [
+    1,
+    23,
+    "string",
+    0.11
+  ],
+  "object": {
+    "key1": "value1",
+    "key2": 2,
+    "key3": {
+      "subkey1": "subkey"
+    }
+  }
+}

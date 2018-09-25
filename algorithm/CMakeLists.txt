@@ -9,3 +9,9 @@ find_package(OpenSSL REQUIRED)
 
 target_link_libraries(algorithm PUBLIC OpenSSL::SSL OpenSSL::Crypto)
 message("OpenSSL ${OpenSSL_VERSION} linked")
+
+set_target_properties(algorithm PROPERTIES
+        ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/lib/"
+        LIBRARY_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/lib/"
+        RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin/"
+        )

@@ -107,3 +107,5 @@ CTestTestfile.cmake
 *.app
 *.iml
 .idea
+bin
+lib

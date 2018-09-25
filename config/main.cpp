@@ -10,13 +10,12 @@ using namespace boost;
 using namespace std;
 
 int main () {
-
-    boost::filesystem::path fullPath(boost::filesystem::current_path());
-    std::cout << "Current path is : " << fullPath << std::endl;
-
     boost::property_tree::ptree pt;
-    boost::property_tree::ini_parser::read_ini("../../config/sample.conf", pt);
 
-    std::cout << pt.get<std::string>("basic.foobar") << std::endl;
-    std::cout << pt.get<std::string>("advanced.lorem") << std::endl;
+    boost::filesystem::path confPath = boost::filesystem::canonical("../config/sample.conf");
+
+    boost::property_tree::ini_parser::read_ini(confPath.string(), pt);
+
+    std::cout << "basic.foobar = " << pt.get<std::string>("basic.foobar") << std::endl;
+    std::cout << "advanced.lorem = " << pt.get<std::string>("advanced.lorem") << std::endl;
 }
