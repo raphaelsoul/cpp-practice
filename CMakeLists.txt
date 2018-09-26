@@ -8,4 +8,4 @@ add_subdirectory(hello)
 add_subdirectory(algorithm)
 add_subdirectory(config)
 add_subdirectory(json)
-
+add_subdirectory(template)
